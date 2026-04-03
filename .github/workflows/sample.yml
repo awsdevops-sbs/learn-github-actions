@@ -3,16 +3,21 @@ name: Simple Example
 on: [push]
 
 jobs:
-  demo:
+  Job1:
 
     runs-on: ubuntu-latest
     steps:
       - name: Code checkout
         uses: actions/checkout@v4
 
-      - name: Run Echo command
-        run: echo "Hello World"
+      - name: Code Build
+        run: echo "Code Build"
 
-      - name: Run ls command
-        run: ls -l
+      - name: Code Test
+        run: echo "Code Test"
+
+      - name: Code Realse
+        run: echo "Code Realse"
+
+
 
